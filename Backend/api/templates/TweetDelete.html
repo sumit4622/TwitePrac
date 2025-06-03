@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+Tweet
+{% endblock  %}
+
+{% block content %}
+<h1 class="text-center ">
+    <a href="{% url 'tweet_list' %}" class="btn btn-primary">Go Back</a>
+      <a href="{% url 'tweet_delete' tweet.id%}" class="btn btn-danger"
+        >Delete</a
+      >
+</h1>
+
+{% endblock  %}

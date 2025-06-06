@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+Tweet
+{% endblock  %}
+
+{% block content %}
+<h1 class="text-center">
+    welcome Create a tweet.. 
+</h1>
+</h1>
+{% if form.instance.pk %}
+edit Tweet 
+{%else%} 
+Create tweet
+{% endif %}
+
+{% endblock  %}
+ 

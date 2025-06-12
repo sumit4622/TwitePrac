@@ -11,6 +11,6 @@ urlpatterns = [
     path('<int:tweet_id>/delete/', views.tweet_delete, name = "tweet_delete" ),
     path('register/', views.register, name = "register" ),
     path('logged_out', views.logged_out_view, name='logged_out'),
-    path('logout/', auth_views.LogoutView.as_view(next_page='logged_out'), name='logout'),
+    path('logout/', auth_views.LogoutView(next_page='logged_out'), name='logout'),
 
 ]

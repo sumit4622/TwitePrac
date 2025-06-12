@@ -64,3 +64,6 @@ def register(request):
     else:
         form = UserRegistrationForm()
     return render(request, 'registration/register.html', {'form' : form})
+
+def logged_out_view(request):
+    return render(request, 'logged_out.html')
